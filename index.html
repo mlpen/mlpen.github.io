@@ -148,7 +148,7 @@
 					To make it numerically stable in the presence of high order terms, I normalized the intensity to [0, 1] before filtering so range kernel is adjusted accordingly. The parameter used for bilateral filter \(\sigma_h = 0.15\) for range kernel and \(\sigma_s = 10\) for spatial kernel. The size of kernel is 4 times sigma_s to cover at least 95% of weights.
 					This set of parameters is used for all experiments.
 
-					The order of approximation is 30. The computation time is 404.5129 seconds for true bilateral filter and 28.2906 seconds for Taylor's approximation. There is no noticable between from filtered images, but the approximation can be computed much faster. I used Python to perform computation, so it's quite slow. If C or C++ is used, both computation will be faster, but approximation is still expected to be faster.
+					The order of approximation is 30. The computation time is 404.5129 seconds for true bilateral filter and 28.2906 seconds for Taylor's approximation. There is no noticable difference between filtered images and approximated images, but the approximation can be computed much faster. I used Python to perform computation, so it's quite slow. If C or C++ is used, both computation will be faster, but approximation is still expected to be faster.
 
 				</div>
 
