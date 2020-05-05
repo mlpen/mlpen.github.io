@@ -164,7 +164,7 @@
 
 					\[\frac{f(x) - f(y)}{\sigma \sqrt{m}} \in [- \frac{\pi}{2}, \frac{\pi}{2}]\]
 
-					For f in range [0, T], the range of f(x) - f(y) is [-T, T], by properly choosing sigma and m, we can have the approximation using trigonometric. For grayscale image, the value of $T$ is typically 255. Then, we have
+					For f in range [0, T], the range of f(x) - f(y) is [-T, T], by properly choosing sigma and m, we can have the approximation using trigonometric. For grayscale image, the value of T is typically 255. Then, we have
 
 					\[\exp( - \frac{1}{2 \sigma_h^2} (f(x) - f(y))^2 ) \approx [\cos(\frac{f(x) - f(y)}{\sigma_h \sqrt{m}})]^m = [\cos(\frac{f(x)}{\sigma_h \sqrt{m}}) \cos(\frac{f(y)}{\sigma_h \sqrt{m}}) + \sin(\frac{f(x)}{\sigma_h \sqrt{m}}) \sin(\frac{f(y)}{\sigma_h \sqrt{m}})]^m\]
 
