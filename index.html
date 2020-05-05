@@ -156,7 +156,7 @@
 				<hr>
 				<h4>Trigonometric Approximation</h4>
 				<div>
-	        An improvement of accuracy over Taylor's expansion is using raised cosine kernel to approximate the exponential kernel [2]. While based on the fact that
+	        An improvement of accuracy over Taylor's expansion is using raised cosine kernel to approximate the exponential kernel [2]. The approximation bases on the fact that 
 
 					\[\lim_{m \to \infty} [\cos(\frac{f(x) - f(y)}{\sigma_h \sqrt{m}})]^m = \exp( - \frac{1}{2 \sigma_h^2} (f(x) - f(y))^2 )\]
 
@@ -173,9 +173,7 @@
 					\[\sum_{n = 0}^m {m \choose n} \cos(\frac{f(x)}{\sigma_h \sqrt{m}})^{m - n} \sin(\frac{f(x)}{\sigma_h \sqrt{m}})^n \cos(\frac{f(y)}{\sigma_h \sqrt{m}})^{m - n} \sin(\frac{f(y)}{\sigma_h \sqrt{m}})^n\]
 
 					For application of bilateral filtering on image sigma_h is usually large, so small m is usually sufficient for large sigma_h
-					to obtain good approximation. Hence, the bilateral filtering can be approximated as
-
-		      As a result, the bilateral filter can be approximated as
+					to obtain good approximation. As a result, the bilateral filter can be approximated as
 
 		      \[f_{filtered} (x) \approx \frac{1}{W} \sum_{n = 0}^m {m \choose n} \cos(\frac{f(x)}{\sigma_h \sqrt{m}})^{m - n} \sin(\frac{f(x)}{\sigma_h \sqrt{m}})^n \sum_{y \in D} g(||x - y||) [\cos(\frac{f(y)}{\sigma_h \sqrt{m}})^{m - n} \sin(\frac{f(y)}{\sigma_h \sqrt{m}})^n f(y)]\]
 
